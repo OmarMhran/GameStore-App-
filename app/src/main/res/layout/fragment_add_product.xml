@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blank"
+        tools:context=".ui.seller.home.fragment.AddProductFragment">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivSellerImageProduct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/color1"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toStartOf="@id/tvSellerNameProduct"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSellerNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="115dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_title"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSellerImageProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivSellerImageProduct"
+            app:layout_constraintVertical_bias="0.525" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@id/ivSellerImageProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"/>
+
+
+        <TextView
+            android:id="@+id/tvSellerProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:textSize="@dimen/medium_title"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"/>
+
+
+        <EditText
+            android:id="@+id/etSellerProductName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/button_solid_background"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_8"
+            android:inputType="text"
+            android:textSize="@dimen/medium_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSellerProductName"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvSellerProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="@dimen/medium_title"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerYearSeller"/>
+
+
+        <EditText
+            android:id="@+id/etSellerProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/button_solid_background"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_8"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSellerProductPrice"/>
+
+
+        <TextView
+            android:id="@+id/tvYearOfPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year_of_parchase"
+            android:textSize="@dimen/medium_title"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/etSellerProductName"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/spinnerYearSeller"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/gray"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_8"
+            android:text="@string/yyyy"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvYearOfPurchase"/>
+
+
+
+        <TextView
+            android:id="@+id/tvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image"
+            android:textSize="@dimen/medium_title"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/etSellerProductPrice"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadImageSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_solid_background"
+            app:backgroundTint="@color/gray"
+            android:text="@string/upload_image"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            app:icon="@drawable/ic_upload"
+            android:padding="@dimen/margin_8"
+            app:iconTint="@color/black"
+            app:iconGravity="textStart"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvImage"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPublishProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_solid_background"
+            android:text="@string/publish"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_32"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadImageSeller"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ProgressBar
+            android:id="@+id/pbAddProduct"
+            android:layout_width="@dimen/margin_48"
+            android:layout_height="@dimen/margin_48"
+            android:progressTint="@color/purple_200"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.567" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

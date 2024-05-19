@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_arrow.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_game_icon.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_launcher_foreground_app.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_send.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/drawable/ic_upload.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_chat.xml" value="0.25" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_payment.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_product.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_seller_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/chat_item_customer_layout.xml" value="0.2" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/chat_item_layout.xml" value="0.5" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/chat_item_seller_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_add_product.xml" value="0.22" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_pay.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_payment_details.xml" value="0.33" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_payment_home.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_chat.xml" value="0.16" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_incoming.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_login.xml" value="0.25" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_products.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/fragment_seller_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/incoming_messages_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/product_item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/product_payment_layout.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/spinner_item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/steps_item_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/layout/toolbar_with_logout_button.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Omar/Desktop/GameStore/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20462962962962963" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

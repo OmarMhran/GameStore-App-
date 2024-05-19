@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_decription">Welcome To Our Beautiful World</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="have_an_account">I Have An Account,<font color='#000000'> <u> Login</u></font> </string>
+    <string name="signUp">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contact_him">Contact Him</string>
+    <string name="year_of_parchase"><font color='#000000'>Year Of Purchase </font></string>
+    <string name="price"><font color='#000000'>Price </font></string>
+    <string name="buy_now">Buy Now</string>
+    <string name="welcome">Welcome</string>
+    <string name="customer">Customer</string>
+    <string name="or">Or</string>
+    <string name="seller">Seller</string>
+    <string name="add_product">Add Product</string>
+    <string name="my_products">My Products</string>
+    <string name="logout">Logout</string>
+    <string name="continue_button">Continue</string>
+    <string name="id">ID</string>
+    <string name="delivery_place">Delivery Place</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="payment_by_knet">Payment By Knet</string>
+    <string name="exppiration_date">Expiration Date</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="upload_image">Upload Image From Your Phone</string>
+
+
+
+    <string name="selected_item">Selected item:</string>
+    <string name="publish">Publish</string>
+    <string name="image">Image</string>
+    <string name="card_number">Card Number</string>
+    <string name="message">Write The Letter Here</string>
+    <string name="civil_id">Civil ID</string>
+    <string name="chipping_information">Shipping Informations</string>
+    <string name="city">City</string>
+    <string name="bulding_number">Building Number</string>
+    <string name="floor_num">Floor Number</string>
+    <string-array name="month_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jan</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+</resources>

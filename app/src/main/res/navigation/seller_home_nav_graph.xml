@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seller_home_nav_graph.xml"
+    app:startDestination="@id/sellerHomeFragment">
+
+    <fragment
+        android:id="@+id/sellerHomeFragment"
+        android:name="com.example.gamestore.ui.seller.home.SellerHomeFragment"
+        android:label="SellerHomeFragment" >
+        <action
+            android:id="@+id/action_sellerHomeFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_sellerHomeFragment_to_sellerProductsFragment"
+            app:destination="@id/sellerProductsFragment" />
+        <action
+            android:id="@+id/action_sellerHomeFragment_to_sellerIncomingFragment"
+            app:destination="@id/sellerIncomingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.gamestore.ui.seller.home.fragment.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/action_addProductFragment_to_sellerHomeFragment"
+            app:destination="@id/sellerHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerProductsFragment"
+        android:name="com.example.gamestore.ui.seller.home.fragment.SellerProductsFragment"
+        android:label="fragment_seller_products"
+        tools:layout="@layout/fragment_seller_products" >
+        <action
+            android:id="@+id/action_sellerProductsFragment_to_sellerHomeFragment"
+            app:destination="@id/sellerHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerIncomingFragment"
+        android:name="com.example.gamestore.ui.seller.home.fragment.SellerIncomingFragment"
+        android:label="fragment_seller_incoming"
+        tools:layout="@layout/fragment_seller_incoming" >
+        <action
+            android:id="@+id/action_sellerIncomingFragment_to_sellerChatFragment"
+            app:destination="@id/sellerChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerChatFragment"
+        android:name="com.example.gamestore.ui.seller.chat.SellerChatFragment"
+        android:label="fragment_seller_chat"
+        tools:layout="@layout/fragment_seller_chat" >
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+</navigation>

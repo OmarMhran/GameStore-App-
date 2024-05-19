@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.seller.home.SellerHomeFragment">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivSellerImageHome"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="@dimen/margin_32"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/color1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tvSellerNameHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_title"
+            android:text="User_1"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintTop_toBottomOf="@id/ivSellerImageHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_48"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_64"
+            android:background="@drawable/button_solid_background"
+            android:gravity="center"
+            android:text="@string/add_product"
+            android:textAllCaps="false"
+            android:textSize="@dimen/medium_title"
+            android:textColor="@color/white"
+            app:iconGravity="textStart"
+            app:icon="@drawable/ic_add_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSellerNameHome"/>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIncomingMessages"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_48"
+            android:background="@drawable/button_solid_background"
+            android:backgroundTint="@color/gray"
+            android:textSize="@dimen/medium_title"
+            android:text="@string/incoming_messages"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAddProduct"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMyProducts"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@drawable/button_solid_background"
+            android:backgroundTint="@color/gray"
+            android:textSize="@dimen/medium_title"
+            android:text="@string/my_products"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:drawablePadding="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnIncomingMessages"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

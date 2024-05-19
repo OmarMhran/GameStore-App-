@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/seller_nav_graph"
+    app:startDestination="@id/sellerLoginFragment">
+
+    <fragment
+        android:id="@+id/sellerLoginFragment"
+        android:name="com.example.gamestore.ui.seller.regisration.fragments.SellerLoginFragment"
+        android:label="SellerLoginFragment" >
+        <action
+            android:id="@+id/action_sellerLoginFragment_to_sellerSignUpFragment"
+            app:destination="@id/sellerSignUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellerSignUpFragment"
+        android:name="com.example.gamestore.ui.seller.regisration.fragments.SellerSignUpFragment"
+        android:label="SellerSignUpFragment" >
+        <action
+            android:id="@+id/action_sellerSignUpFragment_to_sellerLoginFragment"
+            app:destination="@id/sellerLoginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/sellerLoginFragment" />
+    </fragment>
+</navigation>

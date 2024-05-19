@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_nav_graph.xml"
+    app:startDestination="@id/paymentHomeFragment">
+    <fragment
+        android:id="@+id/paymentHomeFragment"
+        android:name="com.example.gamestore.ui.home.fragment.PaymentHomeFragment"
+        android:label="fragment_payment_home"
+        tools:layout="@layout/fragment_payment_home" >
+        <action
+            android:id="@+id/action_paymentHomeFragment_to_paymentDetailsFragment"
+            app:destination="@id/paymentDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentDetailsFragment"
+        android:name="com.example.gamestore.ui.product.fragment.PaymentDetailsFragment"
+        android:label="fragment_payment_details"
+        tools:layout="@layout/fragment_payment_details" >
+        <action
+            android:id="@+id/action_paymentDetailsFragment_to_payFragment"
+            app:destination="@id/payFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.gamestore.ui.product.fragment.PayFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" />
+</navigation>
